@@ -4,7 +4,7 @@ Meu portfólio na forma de um tablet com sistema próprio, o **EX**: tela deslig
 
 ![Tela do projeto](docs/tela.png)
 
-**Demo:** _(preencha quando publicar)_
+**Demo:** _(https://portfolio-ex-henna-seven.vercel.app/)_
 
 ## Por que criei
 
@@ -30,7 +30,7 @@ Os textos e links ficam todos em `src/conteudo.js`. O nome do sistema e o login 
 Requisito: [Node.js](https://nodejs.org) 18 ou superior.
 
 ```bash
-git clone https://github.com/seu-usuario/portfolio-ex
+git clone https://github.com/Negoedd-Dev/portfolio-ex
 cd portfolio-ex
 npm install
 npm run dev
@@ -45,4 +45,4 @@ Sem o Git, baixe o ZIP pelo botão verde **Code** desta página.
 
 ## Autor
 
-Negoedd · [LinkedIn](https://www.linkedin.com/in/seu-perfil)
+Negoedd · [LinkedIn](https://www.linkedin.com/in/edson-nunes)

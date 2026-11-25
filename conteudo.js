@@ -42,7 +42,7 @@ export const PROJETOS = [
       "Plataforma de dicas de produtividade (atalhos e fórmulas), com busca, filtro por programa, progresso de leitura, editor de dicas e um assistente de chat.",
     tecnologias: ["React", "Vite", "JavaScript", "CSS"],
     codigo: "https://github.com/Negoedd-Dev/ASSISTANT-5.git",
-    demo: "_(https://assistant-5-tawny.vercel.app/)_",
+    demo: "https://assistant-5-tawny.vercel.app/",
   },
   {
     nome: "Calculadora de massa de tubo",
@@ -66,14 +66,14 @@ export const PROJETOS = [
       "Checklist por etapas com resultado automático, apontamento de recorte com cálculo de massa e relatório para imprimir ou salvar em PDF.",
     tecnologias: ["React", "Vite", "JavaScript", "CSS"],
     codigo: "https://github.com/Negoedd-Dev/CHECKLIST_INSPECAO_DIGITAL.git",
-    demo: "(https://checklist-inspecao-digital-hazel.vercel.app/)",
+    demo: "https://checklist-inspecao-digital-hazel.vercel.app/",
   },
   {
     nome: "Portfólio EX",
     descricao:
       "Este portfólio: um tablet com sistema próprio, com tela de boot animada, login e seções em cards.",
-    tecnologias: ["React", "CSS"],
-    codigo: "https://github.com/Negoedd-Dev/EX-OS-PORTIFOLIO.git",
-    demo: "",
+    tecnologias: ["React", "Vite", "JavaScript", "CSS"],
+    codigo: "https://github.com/Negoedd-Dev/PORTFOLIO-EX.git",
+    demo: "https://portfolio-ex-henna-seven.vercel.app/",
   },
 ];
