@@ -1,0 +1,94 @@
+.desktop {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(160deg, #cfe3f8, #8fb8e8);
+  color: #12304f;
+}
+
+.desktop-barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.desktop-secao-atual {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.desktop-barra button {
+  padding: 4px 14px;
+  font: inherit;
+  color: #12304f;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #12304f;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.desktop-palco {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+
+.desktop-area {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+  scroll-snap-type: y proximity;
+}
+
+.desktop-area:focus-visible {
+  outline: 2px solid #3f6a9f;
+  outline-offset: -2px;
+}
+
+.desktop-secao {
+  min-height: 100%;
+  scroll-snap-align: start;
+}
+
+.desktop-setas {
+  position: absolute;
+  top: 50%;
+  right: 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: translateY(-50%);
+}
+
+.desktop-setas button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #12304f;
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid #12304f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.desktop-setas button:hover:not(:disabled),
+.desktop-setas button:focus-visible {
+  color: #fff;
+  background: #12304f;
+}
+
+.desktop-setas button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .desktop-area {
+    scroll-behavior: auto;
+  }
+}

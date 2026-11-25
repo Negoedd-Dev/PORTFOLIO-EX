@@ -1,0 +1,69 @@
+.projetos-grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 14px;
+}
+
+.projeto-cartao {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(18, 48, 79, 0.15);
+}
+
+.projeto-cartao h3 {
+  font-size: 1.05rem;
+}
+
+.projeto-cartao p {
+  flex: 1;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.projeto-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  list-style: none;
+}
+
+.projeto-tags li {
+  padding: 2px 9px;
+  font-size: 0.75rem;
+  color: #12304f;
+  background: #dbe9f8;
+  border: 1px solid #9db8d6;
+  border-radius: 999px;
+}
+
+.projeto-links {
+  display: flex;
+  gap: 8px;
+  min-height: 30px;
+}
+
+.projeto-links a {
+  padding: 4px 14px;
+  font-size: 0.85rem;
+  color: #12304f;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #12304f;
+  border-radius: 999px;
+}
+
+.projeto-links a:hover,
+.projeto-links a:focus-visible {
+  background: #12304f;
+  color: #fff;
+}
+
+.projeto-breve {
+  align-self: center;
+  font-size: 0.8rem;
+  color: #455d78;
+}

@@ -1,0 +1,160 @@
+.boot {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+.boot::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 30%,
+    #9cc3ee 0%,
+    #5b8cc4 55%,
+    #3f6a9f 100%
+  );
+  opacity: 0;
+  animation: aparecer 1.4s ease forwards;
+}
+
+.boot-conteudo {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 16px;
+}
+
+.logo {
+  display: flex;
+  gap: 0.12em;
+  font-size: clamp(64px, 15vw, 150px);
+  line-height: 1;
+  font-weight: 800;
+}
+
+.logo span {
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 3px #fff;
+  opacity: 0;
+  animation:
+    letra 0.9s ease forwards,
+    pulsar 2.2s ease-in-out infinite;
+  animation-delay: calc(1.8s + var(--i) * 0.7s), calc(2.7s + var(--i) * 0.7s);
+}
+
+.acesso {
+  min-height: 260px;
+  opacity: 0;
+  animation: aparecer 0.8s ease forwards;
+  animation-delay: calc(1.8s + var(--letras) * 0.7s + 0.5s);
+}
+
+.boot-botao {
+  padding: 10px 34px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+  border: 2px solid #fff;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.boot-botao:hover,
+.boot-botao:focus-visible {
+  background: rgba(255, 255, 255, 0.35);
+  outline: none;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: min(260px, 80vw);
+}
+
+.login input {
+  width: 100%;
+  padding: 9px 14px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  outline: none;
+}
+
+.login input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.login input:focus {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.login-erro {
+  padding: 4px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(160, 30, 30, 0.75);
+  border-radius: 6px;
+}
+
+.login-visitante {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: underline;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.login-dica {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes letra {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulsar {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(255, 255, 255, 1));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .boot::before,
+  .logo span,
+  .acesso {
+    animation: none;
+    opacity: 1;
+  }
+}

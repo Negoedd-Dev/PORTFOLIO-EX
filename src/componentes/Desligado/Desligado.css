@@ -1,0 +1,39 @@
+.desligado {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: #000;
+}
+
+.desligado-botao {
+  width: 88px;
+  height: 88px;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.55);
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.desligado-botao:hover,
+.desligado-botao:focus-visible {
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 24px rgba(143, 184, 232, 0.8);
+  outline: none;
+}
+
+.desligado-dica {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.35);
+}
